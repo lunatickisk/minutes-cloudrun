@@ -23,7 +23,7 @@ ENV MODEL=${MODEL} \
     PORT=8080
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-        python3 python3-pip ffmpeg curl ca-certificates \
+        python3 python3-pip ffmpeg curl ca-certificates zstd \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install --no-cache-dir \
